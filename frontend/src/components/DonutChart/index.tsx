@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import Chart from 'react-apexcharts';
 import { SaleSum } from 'types/sale';
 import { BASE_URL } from 'utils/requests';
+
 type ChartData = {
     labels: string[];
     series: number[];
@@ -23,12 +24,6 @@ const DonutChart = () => {
             });
 
     }, []);
-
-
-    //const mockData = {
-    //  series: [477138, 499928, 444867, 220426, 473088],
-    //labels: ['Anakin', 'Barry Allen', 'Kal-El', 'Logan', 'Padmé']
-    //}
 
     const options = {
         legend: {
