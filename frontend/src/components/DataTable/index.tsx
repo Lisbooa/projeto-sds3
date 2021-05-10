@@ -2,7 +2,7 @@ import axios from "axios";
 import Pagination from "components/Pagination/indeix";
 import { useEffect, useState } from "react";
 import { SalePage } from "types/sale";
-import { formatLocalDate } from "utils/formart";
+import { formatLocalDate} from "utils/formart";
 import { BASE_URL } from "utils/requests";
 
 
@@ -62,7 +62,3 @@ const DataTable = () => {
 }
 
 export default DataTable;
-
-function formateLocalDate(date: string, arg1: string): import("react").ReactNode {
-    throw new Error("Function not implemented.");
-}
